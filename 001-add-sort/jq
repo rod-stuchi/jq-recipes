@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jq -s 'add|to_entries|sort_by(.key)|map({(.key) : .value })' c b a
